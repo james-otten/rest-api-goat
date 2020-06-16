@@ -1,5 +1,5 @@
 import json
-import server
+import app as server
 
 def row2dict(row):
 	"""Takes sqlite3.Row objects and converts them to dictionaries.
