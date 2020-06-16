@@ -20,7 +20,7 @@ def get_db():
 @app.route('/')
 def hello():
     name = request.args.get("name", "World")
-    return f'Hello, {escape(name)}!'
+    return 'Hello, '+escape(name)+'!'
 
 @app.teardown_appcontext
 def close_connection(exception):
