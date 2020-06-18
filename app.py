@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, escape, request, g
+from flask import Flask, escape, request, g, send_file
 import config
 
 app = Flask(__name__)
@@ -21,6 +21,10 @@ def get_db():
 def hello():
     name = request.args.get("name", "World")
     return 'Hello, '+escape(name)+'!'
+
+@app.route('/postman')
+def postman():
+    return send_file('./static/Postman.json', as_attachment=True)
 
 @app.teardown_appcontext
 def close_connection(exception):

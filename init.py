@@ -1,5 +1,6 @@
 import json, sqlite3
 import config
+import os
 
 db = sqlite3.connect(config.config['db_name'])
 
@@ -33,3 +34,16 @@ db.execute("CREATE TABLE transfers (id INTEGER PRIMARY KEY, custID_from INTEGER,
 
 db.commit() # NEED this line or changes aren't made
 db.close()
+
+# Fix postman file
+proto = 'https'
+hostname = os.environ['VIRTUAL_HOST']
+port = '443'
+
+with open('./static/Postman.json', 'w') as fw:
+    with open('./static/PostmanTemplate.json', 'r') as fr:
+        for line in fr:
+            line = line.replace('{PROTO}', proto)
+            line = line.replace('{HOST}', hostname)
+            line = line.replace('{PORT}', port)
+            fw.write(line)

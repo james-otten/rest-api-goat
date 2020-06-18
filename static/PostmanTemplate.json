@@ -27,12 +27,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/authenticate",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/authenticate",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"authenticate"
 					]
@@ -57,12 +57,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/get_customers",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/get_customers",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"get_customers"
 					]
@@ -87,12 +87,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/get_customer_v1/2",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/get_customer_v1/2",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"get_customer_v1",
 						"2"
@@ -118,12 +118,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/get_customer_v2/2",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/get_customer_v2/2",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"get_customer_v2",
 						"2"
@@ -158,12 +158,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/transfer",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/transfer",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"transfer"
 					]
@@ -188,12 +188,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/get_transfers",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/get_transfers",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"get_transfers"
 					]
@@ -218,12 +218,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/get_transfers/CREATED",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/get_transfers/CREATED",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"get_transfers",
 						"CREATED"
@@ -249,12 +249,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/process_transfers",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/process_transfers",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"process_transfers"
 					]
@@ -279,12 +279,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/confirm_transfer/1",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/confirm_transfer/1",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"confirm_transfer",
 						"1"
@@ -310,12 +310,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/new_token",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/new_token",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"new_token"
 					]
@@ -341,12 +341,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/token/jyrvm14k9tvdiesxwgku",
-					"protocol": "http",
+					"raw": "{PROTO}://{HOST}:{PORT}/token/jyrvm14k9tvdiesxwgku",
+					"protocol": "{PROTO}",
 					"host": [
-						"localhost"
+						"{HOST}"
 					],
-					"port": "5000",
+					"port": "{PORT}",
 					"path": [
 						"token",
 						"jyrvm14k9tvdiesxwgku"
